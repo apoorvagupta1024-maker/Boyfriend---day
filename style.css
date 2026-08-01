@@ -5,14 +5,14 @@ body {
   text-align: center;
   margin: 0;
   
-  display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-padding: 20px;
-box-sizing: border-box;
-}
+  body {
+  background: linear-gradient(to bottom, #050816, #0B1D3A, #090A1A);
+  color: white;
+  font-family: Georgia, serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  }
 
 h1 {
   color: #FF4D88;
@@ -85,7 +85,7 @@ button:hover{
 
   font-size:18px;
 
-#
+}
 #website {
   display: none;
   width: 100%;
