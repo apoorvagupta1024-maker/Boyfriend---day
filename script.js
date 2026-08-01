@@ -1,15 +1,17 @@
 const envelopeScreen = document.getElementById("envelopeScreen");
 const website = document.getElementById("website");
-
 const beginBtn = document.getElementById("beginBtn");
-const chapter2 = document.getElementById("chapter2");
+const chapter1 = document.getElementById("chapter1");
 
 // Open the website
-envelopeScreen.addEventListener("click", function () {
+envelopeScreen.addEventListener("click", () => {
     envelopeScreen.style.display = "none";
-    website.style.display = "flex";
+    website.style.display = "block";
 });
 
-beginBtn.addEventListener("click", function () {
-    alert("Button clicked!");
+// Scroll to Chapter 1
+beginBtn.addEventListener("click", () => {
+    chapter1.scrollIntoView({
+        behavior: "smooth"
+    });
 });
