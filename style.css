@@ -35,6 +35,8 @@ body{
     border-left:110px solid transparent;
     border-right:110px solid transparent;
     border-top:70px solid #E9D2B8;
+    transform-origin: top;
+    transition: transform 0.8s ease;
 }
 .flap{
     z-index:2;
@@ -52,6 +54,8 @@ body{
     justify-content:center;
     align-items:center;
     font-size:40px;
+    transition: all .8s ease;
+    z-index:1;
 }
 
 .envelope:hover{
@@ -66,6 +70,13 @@ body{
 #envelopeScreen p{
     color:#ddd;
     font-size:18px;
+}
+.open .flap{
+    transform:rotateX(180deg);
+}
+
+.open .letter{
+    transform:translateY(-60px);
 }
 
 /* Website */
