@@ -1,7 +1,7 @@
 body {
   background: linear-gradient(to bottom, #050816, #0B1D3A, #090A1A);
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: Georgia, serif;
   text-align: center;
   margin: 0;
   
@@ -16,7 +16,7 @@ box-sizing: border-box;
 
 h1 {
   color: #FF4D88;
-  font-size: 52px;
+  font-size: 58px;
   text-shadow: 0 0 10px rgba(255, 77, 136, 0.8);
 }
 
@@ -27,18 +27,19 @@ p {
   color: #E8E8E8;
 }
 button {
-  background-color: #FF4D88;
+  background: linear-gradient(45deg, #ff4d88, #ff80aa);
   color: white;
   border: none;
-  padding: 15px 30px;
-  font-size: 18px;
+  padding: 18px 40px;
+  font-size: 20px;
   border-radius: 50px;
   cursor: pointer;
-  margin-top: 30px;
-  transition: 0.3s;
+  margin-top: 35px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 20px rgba(255,77,136,0.5);
 }
 
-button:hover {
-  background-color: #ff2f70;
-  transform: scale(1.08);
+button:hover{
+    transform: scale(1.1);
+    box-shadow:0 0 35px rgba(255,77,136,0.8);
 }
