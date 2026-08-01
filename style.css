@@ -85,19 +85,14 @@ button:hover{
 
   font-size:18px;
 
-#homeScreen {
+#
+#website {
   display: none;
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#homeScreen {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   box-sizing: border-box;
 }
