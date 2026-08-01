@@ -1,5 +1,5 @@
 body {
-  background-color: #090A1A;
+  background: linear-gradient(to bottom, #050816, #0B1D3A, #090A1A);
   color: white;
   font-family: Arial, sans-serif;
   text-align: center;
@@ -16,12 +16,15 @@ box-sizing: border-box;
 
 h1 {
   color: #FF4D88;
-  font-size: 48px;
+  font-size: 52px;
+  text-shadow: 0 0 10px rgba(255, 77, 136, 0.8);
 }
 
 p {
   font-size: 22px;
   line-height: 1.6;
+  max-width: 600px;
+  color: #E8E8E8;
 }
 button {
   background-color: #FF4D88;
