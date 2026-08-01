@@ -58,8 +58,9 @@ body{
     justify-content:center;
     align-items:center;
     font-size:40px;
-    transition: all .8s ease;
-    z-index:1;
+    transition:all .8s ease;
+
+    z-index:3;   /* was 1 */
 }
 
 .envelope:hover{
@@ -92,7 +93,7 @@ body{
     flex-direction:column;
     align-items:center;
     justify-content:flex-start;
-    padding:80px 20px;
+    padding:20px;
     box-sizing:border-box;
 }
 
@@ -100,8 +101,9 @@ body{
     min-height:100vh;
     display:flex;
     flex-direction:column;
-    justify-content:center;
     align-items:center;
+    justify-content:flex-start;
+    padding-top:40px;
 }
 
 .hero h1{
