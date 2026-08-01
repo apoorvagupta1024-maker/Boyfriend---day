@@ -85,9 +85,12 @@ button:hover{
 
   font-size:18px;
 
-}
 #homeScreen {
   display: none;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #homeScreen {
   display: none;
