@@ -24,6 +24,9 @@ body{
     height:140px;
     background:red;
     border:5px solid yellow;
+
+    perspective:800px;
+    overflow:visible;
 }
 
 .flap{
@@ -32,13 +35,14 @@ body{
     left:0;
     width:0;
     height:0;
+
     border-left:110px solid transparent;
     border-right:110px solid transparent;
     border-top:70px solid #E9D2B8;
-    transform-origin: top;
-    transition: transform 0.8s ease;
-}
-.flap{
+
+    transform-origin:top center;
+    transition:transform .8s ease;
+
     z-index:2;
 }
 
@@ -71,12 +75,12 @@ body{
     color:#ddd;
     font-size:18px;
 }
-.open .flap{
-    transform:rotateX(180deg);
+.envelope.open .flap{
+    transform:rotateX(-180deg);
 }
 
-.open .letter{
-    transform:translateY(-60px);
+.envelope.open .letter{
+    transform:translateY(-90px);
 }
 
 /* Website */
