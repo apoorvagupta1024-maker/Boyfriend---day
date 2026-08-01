@@ -107,9 +107,8 @@ body{
 }
 
 .hero h1{
-    color:#FF4D88;
-    font-size:52px;
-    text-shadow:0 0 12px rgba(255,77,136,.7);
+    color:lime;
+    font-size:70px;
 }
 
 .hero p{
