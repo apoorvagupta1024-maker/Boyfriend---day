@@ -1,7 +1,12 @@
-const envelope = document.getElementById("envelopeScreen");
-const home = document.getElementById("homeScreen");
+const envelopeScreen = document.getElementById("envelopeScreen");
+const homeScreen = document.getElementById("homeScreen");
 
-envelope.addEventListener("click", function () {
-    envelope.style.display = "none";
-    home.style.display = "flex";
+envelopeScreen.addEventListener("click", function () {
+    envelopeScreen.style.display = "none";
+    homeScreen.style.display = "flex";
+
+    window.scrollTo({
+        top: 0,
+        behavior: "instant"
+    });
 });
