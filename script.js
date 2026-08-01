@@ -1,8 +1,10 @@
-const beginBtn = document.getElementById("beginBtn");
-const chapter2 = document.getElementById("chapter2");
+const envelope = document.getElementById("envelopeScreen");
+const home = document.getElementById("homeScreen");
 
-beginBtn.addEventListener("click", function () {
-  chapter2.scrollIntoView({
-    behavior: "smooth"
-  });
+envelope.addEventListener("click", function () {
+
+    envelope.style.display = "none";
+
+    home.style.display = "flex";
+
 });
