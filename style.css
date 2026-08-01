@@ -132,3 +132,58 @@ button{
     margin-top:150px;
     min-height:100vh;
 }
+
+/* ---------- Moon ---------- */
+
+.moon{
+    position:fixed;
+    top:50px;
+    right:40px;
+    width:90px;
+    height:90px;
+    background:#F8F5E9;
+    border-radius:50%;
+    box-shadow:
+        0 0 20px #fff,
+        0 0 40px #fff,
+        0 0 70px rgba(255,255,220,.8);
+
+    z-index:-2;
+}
+
+/* ---------- Stars ---------- */
+
+.stars{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:-3;
+    background-image:
+        radial-gradient(2px 2px at 20% 30%, white, transparent),
+        radial-gradient(2px 2px at 80% 20%, white, transparent),
+        radial-gradient(2px 2px at 60% 60%, white, transparent),
+        radial-gradient(2px 2px at 15% 75%, white, transparent),
+        radial-gradient(3px 3px at 45% 15%, white, transparent),
+        radial-gradient(2px 2px at 70% 80%, white, transparent),
+        radial-gradient(2px 2px at 90% 55%, white, transparent);
+}
+
+@keyframes twinkle{
+
+    0%{
+        opacity:.4;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:.4;
+    }
+
+}
+
+.stars{
+    animation:twinkle 3s infinite alternate;
+}
