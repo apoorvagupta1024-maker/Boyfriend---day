@@ -1,2 +1,18 @@
 body {
+  background-color: #090A1A;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 100px 20px;
+}
+
+h1 {
+  color: #FF4D88;
+  font-size: 48px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.6;
 }
