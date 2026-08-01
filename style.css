@@ -45,6 +45,10 @@ body{
 
     z-index:2;
 }
+.flap{
+    opacity:0.95;
+    z-index:5;
+}
 
 .letter{
     position:absolute;
@@ -81,7 +85,7 @@ body{
 }
 
 .envelope.open .letter{
-    transform:translateY(-90px);
+    transform:translateY(-40px);
 }
 
 /* Website */
@@ -89,21 +93,16 @@ body{
 #website{
     display:none;
     width:100%;
-    min-height:100vh;
-    flex-direction:column;
-    align-items:center;
-    justify-content:flex-start;
     padding:20px;
     box-sizing:border-box;
 }
 
 .hero{
-    min-height:100vh;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:flex-start;
-    padding-top:40px;
+    padding-top:20px;
 }
 
 .hero h1{
