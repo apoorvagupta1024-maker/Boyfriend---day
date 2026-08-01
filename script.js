@@ -10,9 +10,6 @@ envelopeScreen.addEventListener("click", function () {
     website.style.display = "flex";
 });
 
-// Scroll to Chapter 1
 beginBtn.addEventListener("click", function () {
-    chapter2.scrollIntoView({
-        behavior: "smooth"
-    });
+    alert("Button clicked!");
 });
