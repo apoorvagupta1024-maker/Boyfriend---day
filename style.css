@@ -43,3 +43,46 @@ button:hover{
     transform: scale(1.1);
     box-shadow:0 0 35px rgba(255,77,136,0.8);
 }
+/* ---------- Envelope Screen ---------- */
+
+#envelopeScreen{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.envelope{
+
+  font-size:90px;
+
+  cursor:pointer;
+
+  transition:0.4s;
+
+}
+
+.envelope:hover{
+
+  transform:scale(1.15);
+
+}
+
+#envelopeScreen h2{
+
+  margin-top:20px;
+
+  color:#FFD166;
+
+  font-size:34px;
+
+}
+
+#envelopeScreen p{
+
+  color:#ddd;
+
+  font-size:18px;
+
+}
