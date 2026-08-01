@@ -86,3 +86,6 @@ button:hover{
   font-size:18px;
 
 }
+#homeScreen {
+  display: none;
+}
