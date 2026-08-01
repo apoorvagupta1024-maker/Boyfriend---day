@@ -1,17 +1,17 @@
+// Get elements
 const envelopeScreen = document.getElementById("envelopeScreen");
 const website = document.getElementById("website");
+const envelope = document.querySelector(".envelope");
 const beginBtn = document.getElementById("beginBtn");
 const chapter1 = document.getElementById("chapter1");
 
-// Open the website
-const envelopeScreen = document.getElementById("envelopeScreen");
-const envelope = document.querySelector(".envelope");
-const website = document.getElementById("website");
-
+// Open envelope
 envelope.addEventListener("click", () => {
 
+    // Play opening animation
     envelope.classList.add("open");
 
+    // After animation, show the website
     setTimeout(() => {
         envelopeScreen.style.display = "none";
         website.style.display = "flex";
