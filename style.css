@@ -98,39 +98,62 @@ body{
 }
 
 .hero{
+    min-height:100vh;
     display:flex;
     flex-direction:column;
+    justify-content:center;
     align-items:center;
-    justify-content:flex-start;
-    padding-top:20px;
+    padding:40px 20px;
+    box-sizing:border-box;
+    text-align:center;
 }
 
 .hero h1{
-    color:lime;
-    font-size:70px;
+    font-size:52px;
+    color:#FF4D88;
+    line-height:1.1;
+    margin-bottom:40px;
+    text-shadow:0 0 18px rgba(255,77,136,.6);
 }
 
 .hero p{
-    max-width:600px;
+    max-width:650px;
     font-size:22px;
-    line-height:1.7;
-    color:#E8E8E8;
+    line-height:1.8;
+    color:#ECECEC;
 }
 
 button{
-    margin-top:30px;
-    padding:16px 36px;
+    margin-top:40px;
+    padding:18px 45px;
     border:none;
-    border-radius:40px;
+    border-radius:50px;
     background:#FF4D88;
     color:white;
-    font-size:20px;
+    font-size:22px;
     cursor:pointer;
 }
 
-#chapter1{
-    margin-top:150px;
-    min-height:100vh;
+#chapter1,
+#chapter2{
+    width:100%;
+    max-width:700px;
+    margin:120px auto;
+    padding:20px;
+    text-align:center;
+    box-sizing:border-box;
+}
+
+#chapter1 h2,
+#chapter2 h2{
+    font-size:42px;
+    margin-bottom:25px;
+}
+
+#chapter1 p,
+#chapter2 p{
+    font-size:24px;
+    line-height:1.8;
 }
 
 /* ---------- Moon ---------- */
