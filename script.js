@@ -16,7 +16,7 @@ envelope.addEventListener("click", () => {
 
     setTimeout(() => {
         envelopeScreen.style.display = "none";
-        website.style.display = "flex";
+        website.style.display = "block";
         window.scrollTo(0, 0);
     }, 900);
 
