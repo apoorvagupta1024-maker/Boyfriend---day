@@ -155,7 +155,9 @@ body{
 
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
+
+    padding-top:12px;
 
     font-size:42px;
 
@@ -173,7 +175,7 @@ body{
 
 .envelope.open .letter{
 
-    transform:translateY(-40px);
+    transform:translateY(-30px);
 
 }
 
