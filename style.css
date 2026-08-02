@@ -1,91 +1,202 @@
-body{
+/* ==========================================
+   PROJECT POLARIS
+   PART 1 - GLOBAL + BACKGROUND + ENVELOPE
+========================================== */
+
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
     font-family:Georgia, serif;
-    background:linear-gradient(to bottom,#050816,#0B1D3A,#090A1A);
-    color:white;
+    background:linear-gradient(180deg,#050816 0%,#0B1D3A 55%,#090A1A 100%);
+    color:#ffffff;
+    overflow-x:hidden;
     text-align:center;
 }
 
-/* Envelope Screen */
+/* ---------- Moon ---------- */
+
+.moon{
+    position:fixed;
+    top:35px;
+    right:25px;
+    width:75px;
+    height:75px;
+    border-radius:50%;
+    background:#FFF8DC;
+
+    box-shadow:
+    0 0 15px #fff,
+    0 0 35px rgba(255,255,220,.8),
+    0 0 70px rgba(255,255,220,.4);
+
+    z-index:-2;
+}
+
+/* ---------- Stars ---------- */
+
+.stars{
+    position:fixed;
+    inset:0;
+
+    pointer-events:none;
+
+    background-image:
+    radial-gradient(2px 2px at 10% 20%,white,transparent),
+    radial-gradient(2px 2px at 25% 80%,white,transparent),
+    radial-gradient(2px 2px at 40% 35%,white,transparent),
+    radial-gradient(3px 3px at 60% 15%,white,transparent),
+    radial-gradient(2px 2px at 75% 65%,white,transparent),
+    radial-gradient(2px 2px at 90% 40%,white,transparent),
+    radial-gradient(3px 3px at 82% 90%,white,transparent);
+
+    animation:twinkle 4s infinite alternate;
+
+    z-index:-3;
+}
+
+@keyframes twinkle{
+
+    from{
+        opacity:.45;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+/* ---------- Envelope Screen ---------- */
 
 #envelopeScreen{
-    height:100vh;
+
+    min-height:100vh;
+
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+
     padding:20px;
-    box-sizing:border-box;
+
 }
 
-.envelope{
-    position:relative;
-    width:220px;
-    height:140px;
-    background:red;
-    border:5px solid yellow;
+/* ---------- Envelope ---------- */
 
-    perspective:800px;
-    overflow:visible;
+.envelope{
+
+    position:relative;
+
+    width:220px;
+    height:145px;
+
+    background:#F8E8D0;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:
+    0 12px 25px rgba(0,0,0,.35);
+
+}
+
+.envelope:hover{
+
+    transform:scale(1.05);
+
 }
 
 .flap{
+
     position:absolute;
+
     top:0;
     left:0;
+
     width:0;
     height:0;
 
     border-left:110px solid transparent;
     border-right:110px solid transparent;
-    border-top:70px solid #E9D2B8;
+    border-top:70px solid #E5D0B6;
 
     transform-origin:top center;
-    transition:transform .8s ease;
 
-    z-index:2;
-}
-.flap{
-    opacity:0.95;
+    transition:.8s;
+
     z-index:5;
+
 }
 
 .letter{
+
     position:absolute;
+
     left:20px;
-    bottom:20px;
+    bottom:12px;
+
     width:180px;
-    height:100px;
+    height:110px;
+
     background:white;
-    border-radius:6px;
+
+    border-radius:8px;
+
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:40px;
-    transition:all .8s ease;
 
-    z-index:3;   /* was 1 */
+    font-size:42px;
+
+    transition:.8s;
+
+    z-index:3;
+
 }
 
-.envelope:hover{
-    transform:scale(1.1);
-}
-
-#envelopeScreen h2{
-    color:#FFD166;
-    margin:20px 0 10px;
-}
-
-#envelopeScreen p{
-    color:#ddd;
-    font-size:18px;
-}
 .envelope.open .flap{
+
     transform:rotateX(-180deg);
+
 }
 
 .envelope.open .letter{
+
     transform:translateY(-40px);
+
+}
+
+/* ---------- Envelope Text ---------- */
+
+#envelopeScreen h2{
+
+    margin-top:30px;
+
+    color:#FFD166;
+
+    font-size:30px;
+
+}
+
+#envelopeScreen p{
+
+    margin-top:12px;
+
+    color:#dddddd;
+
+    font-size:17px;
+
 }
 
 /* Website */
